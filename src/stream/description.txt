@@ -1,0 +1,13 @@
+Streams API [Parallelism]: 
+Java 8 Streams API supports many parallel operations to process the data, while completely abstracting out the low level multithreading logic 
+and letting the developer fully concentrate on the data and the operations to be performed on the data.
+
+Most of us know, parallel processing is all about dividing a larger task into smaller sub tasks (forking), then processing the sub tasks in parallel 
+and then  combining the results together to get the final output (joining).
+
+The Java 8 Streams concept is based on converting Collections to a Stream, processing the elements in parallel and then gathering the resulting 
+elements into a Collection.
+
+The source here refers to a Collection, IO Operation or Arrays who provides data to a Stream. Stream keeps the order of the data as it is in the 
+source. Just like functional programming languages, Streams support Aggregate Operations. The common aggregate operations are filter, map, reduce, 
+find, match, sort. These operations can be executed in series or in parallel.
